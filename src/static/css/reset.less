@@ -1,0 +1,79 @@
+@import '../font/iconfont.css';
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  height: unset;
+  min-height: 100%;
+  padding-bottom: 70px;
+  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "sans-serif";
+  font-size: 12px;
+  color: #333;
+  line-height: 100%;
+  background: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, div,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, img,
+input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover{
+  color: #096;
+}
+
+img {
+  border: 0;
+}
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+select {
+  outline: none;
+}
+i {
+  font-style: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  //backface-visibility:hidden; //解决css3动画引起闪动
+  //-webkit-backface-visibility:hidden;
+}
+.clearfix{
+  zoom: 1;
+}
+.clearfix::before,.clearfix::after{
+  content: '';
+  display: table;
+}
+.clearfix::after{
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+}

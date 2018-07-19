@@ -1,0 +1,36 @@
+@import 'common';
+
+.header{
+    height: 66px;
+    background-color: #fff;
+    border-bottom: @border_e5;
+    line-height: 66px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    .logo{
+        color: @color_000;
+        font-size: 30px;
+        font-weight: bold;
+        
+    }
+
+    ul li{
+        float: left;
+        font-size: 14px;
+        margin-left: 20px;
+
+        a{
+            position: relative;
+            display: inline-block;
+            color: @color_000;
+            padding: 0 10px;
+
+            &.active{
+                color:@color_f65a8a
+            }
+        }
+    }
+}
